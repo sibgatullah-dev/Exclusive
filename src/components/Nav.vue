@@ -36,7 +36,7 @@
 
             <div class="w-[25%] bg-[#F5F5F5] rounded-[4px] flex  pl-5 pr-3 py-[10px]">
                 <div class="w-[70%]">
-                    <input class=" " type="text" placeholder="What are you looking for?">
+                    <input class="outline-none " type="text" placeholder="What are you looking for?">
                 </div>
 
                 <div class="w-[30%]  position-center relative">
