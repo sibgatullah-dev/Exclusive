@@ -57,6 +57,7 @@
 </template>
 
 <script setup>
+//after importing an image , the image needs to be binded with the srx class
     import logo from '@/assets/images/logo.png'
 
 </script>
