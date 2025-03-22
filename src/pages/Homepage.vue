@@ -1,10 +1,12 @@
 <template>
     <Nav></Nav>
+    <Sidebar></Sidebar>
     <Footer></Footer>
 </template>
 
 <script setup>
 import Nav from "@/components/Nav.vue"
 import Footer from "@/components/Footer.vue"
-components:{Nav,Footer}
+import Sidebar from "@/components/Sidebar.vue";
+
 </script>

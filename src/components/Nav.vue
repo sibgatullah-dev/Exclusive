@@ -19,7 +19,7 @@
         </div>
     </header>
 
-    <nav class="pt-10">
+    <nav class="pt-10 pb-4 border-b-1 border-[rgba(0,0,0,0.3)]">
     <div class="container">
         <div class="flex items-center">
             <div class="w-[20%]">
