@@ -7,31 +7,28 @@
                 
             </ul>
         </div>
-        <div class="w-[80%]">
-            <div className="w-full md:w-3/4 flex flex-row h-auto md:h-96 bg-black relative">
-            <div className="flex flex-col justify-center items-start text-white w-full md:w-1/3 pl-4 md:pl-16 py-4 md:py-0">
-                <div className="flex items-center mb-2">
-                <FontAwesomeIcon
-                    icon={faApple}
-                    className="text-4xl md:text-6xl mr-2 -mt-1 md:-mt-4 mb-2 md:mb-4"
-                />
-                <h2 className="text-xs md:text-sm font-light -mt-2 md:-mt-6 ml-1 md:ml-2">
-                    iPhone 14 Series
-                </h2>
+        <div class="w-[80%] pt-10 pl-10">
+            <div class="  bg-black ">
+                <div class="banner_inside flex items-center h-auto pt-[58px] pb-[47px] px-[64px]">
+                    <div class="w-[50%] flex flex-col justify-center items-start text-white   pl-4 py-4 ">
+                        <div class="flex items-center space-x-2">
+                            <img src="../assets/apple-logo.png" alt="" class="w-[40px] h-[49px]">
+                            <h2 class="text-xs text-[16px] leading-6 font-poppins">iPhone 14 Series</h2>
+                        </div>
+                        <p class="mt-2 text-[48px] leading-[60px] font-medium">Up to 10%</p>
+                        <p class="mt-2 mb-2  text-[48px] leading-[60px] font-medium"> off Voucher</p>
+                        <a href="#" class="mt-2  flex items-center group">
+                            <span class="text-white text-sm  border-b-[1px] border-white group-hover:text-gray-300">
+                                Shop Now
+                            </span>
+                        
+                        </a>
+                    </div>
+                    <div class="w-[50%]">
+                        <img src="../assets/iphone4.jpeg" alt="">
+                    </div>
+
                 </div>
-                    <p className="mt-2 text-3xl md:text-5xl font-medium">Up to 10%</p>
-                    <p className="mt-2 md:mt-4 mb-2 md:mb-4 text-2xl md:text-4xl font-medium">
-                    off Voucher
-                    </p>
-                    <a href="#" className="mt-2 md:mt-4 flex items-center group">
-                    <span className="text-white text-sm md:text-md border-b-[1px] border-white group-hover:text-gray-300">
-                        Shop Now
-                    </span>
-                    <FontAwesomeIcon
-                        icon={faArrowRight}
-                        className="ml-2 text-sm md:text-md text-white group-hover:text-gray-300"
-                    />
-                    </a>
             </div>
         </div>
     </div>

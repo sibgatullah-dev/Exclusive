@@ -22,10 +22,10 @@
     <nav class="pt-10 pb-4 border-b-1 border-[rgba(0,0,0,0.3)]">
     <div class="container">
         <div class="flex items-center">
-            <div class="w-[20%]">
+            <div class="w-[25%]">
                 <img :src="logo" alt=""> <!--the sign (:) binds the src with the imported logo-->
             </div>
-            <div class="w-[40%] ">
+            <div class="w-[35%] ">
                 <ul class="flex space-x-12 text-[16px] leading-[24px] font-normal Poppins">
                     <li><a href="">Home</a></li>
                     <li><a href="">Contact</a></li>
