@@ -6,13 +6,20 @@
             </div>
             <div class="flex gap-x-[30px]">
                 <div class="w-1/4" v-for="(product, index) in products" :key="index">
-                    <div class="relative group flex bg-[#F5F5F5] py-[34px] items-center justify-center">
+
+                   <div class="div relative">
+                    <div class=" group flex bg-[#F5F5F5] py-[34px] items-center justify-center">
                         <img :src="product.image" :alt="product.name" class="w-[170px] h-auto object-contain">
                         <!-- Add to Cart Button -->
-                        <button class="absolute bottom-4 opacity-0 group-hover:opacity-100 transition-opacity bg-black text-white text-sm px-4 py-2 rounded">
+                        
+                    </div>
+                    <button
+                            class="absolute bottom-[1.5px] w-full display-hidden transition-all duration-300 transform translate-x-[-100%] group-hover:translate-x-0 bg-black text-white text-sm px-4 py-2 font-Poppins text-18px"
+                        >
                             Add to Cart
                         </button>
-                    </div>
+                   </div>
+
                     <div class="short_detail">
                         <h3 class="text-[16px] font-Poppins text-black font-medium leading-6 pb-2 pt-4">{{ product.name }}</h3>
                         <p class="font-Poppins font-medium text-[16px] leading-6">
