@@ -7,21 +7,18 @@
             <div class="flex gap-x-[30px]">
                 <div class="w-1/4" v-for="(product, index) in products" :key="index">
 
-                   <div class="div relative">
-                    <div class=" group flex bg-[#F5F5F5] py-[34px] items-center justify-center">
+                   <div class="div relative w-[250px] h-[240px] bg-[#F5F5F5] shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                    <div class=" group flex  py-[34px] items-center  justify-center">
                         <img :src="product.image" :alt="product.name" class="w-[170px] h-auto object-contain">
                         <!-- Add to Cart Button -->
+                    <button class="absolute bottom-0 w-full bg-[rgba(0,0,0,0.8)] text-white text-sm px-4 py-[6px] font-Poppins text-[18px] transform translate-y-[-100%] opacity-0 transition-all 
+                    duration-500 ease-in-out group-hover:translate-y-0 group-hover:opacity-100 delay-150 mouse-pointer cursor-pointer">Add to Cart</button>
                         
                     </div>
-                    <button
-                            class="absolute bottom-[1.5px] w-full display-hidden transition-all duration-300 transform translate-x-[-100%] group-hover:translate-x-0 bg-black text-white text-sm px-4 py-2 font-Poppins text-18px"
-                        >
-                            Add to Cart
-                        </button>
                    </div>
 
                     <div class="short_detail">
-                        <h3 class="text-[16px] font-Poppins text-black font-medium leading-6 pb-2 pt-4">{{ product.name }}</h3>
+                        <a href=""><h3 class="text-[16px] font-Poppins text-black font-medium leading-6 pb-2 pt-4">{{ product.name }}</h3></a>
                         <p class="font-Poppins font-medium text-[16px] leading-6">
                             <span class="text-red-400">{{ product.price }}</span>
                             <del class="text-[rgba(0,0,0,0.5)] pl-3">{{ product.originalPrice }}</del>
