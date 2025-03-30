@@ -9,10 +9,17 @@
 
                    <div class="div relative w-[250px] h-[240px] bg-[#F5F5F5] shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
                     <div class=" group flex  py-[34px] items-center  justify-center">
+                        <!-- Product Image -->
                         <img :src="product.image" :alt="product.name" class="w-[170px] h-auto object-contain">
+                        <!-- Discount percantage -->
+                        <div class="bg-[#DB4444] py-1 px-3 text-[12px] text-white font-Poppins font-normal leading-4 rounded-[4px] absolute top-3 left-3">
+                        -40%
+                        </div>
+
                         <!-- Add to Cart Button -->
-                    <button class="absolute bottom-0 w-full bg-[rgba(0,0,0,0.8)] text-white text-sm px-4 py-[6px] font-Poppins text-[18px] transform translate-y-[-100%] opacity-0 transition-all 
-                    duration-500 ease-in-out group-hover:translate-y-0 group-hover:opacity-100 delay-150 mouse-pointer cursor-pointer">Add to Cart</button>
+                        <button class="absolute bottom-0 w-full bg-[rgba(0,0,0,0.8)] text-white text-sm px-4 py-[6px 
+                        ] font-Poppins text-[18px] transform translate-y-[-100%] opacity-0 transition-all 
+                        duration-500 ease-in-out group-hover:translate-y-0 group-hover:opacity-100 delay-150 mouse-pointer cursor-pointer">Add to Cart</button>
                         
                     </div>
                    </div>
@@ -34,6 +41,7 @@
                     </div>
                 </div>
             </div>
+            <div class="text-center bg-[#]"></div>
         </div>
     </section>
 </template>
