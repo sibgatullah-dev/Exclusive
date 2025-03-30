@@ -13,7 +13,7 @@
                         <img :src="product.image" :alt="product.name" class="w-[170px] h-auto object-contain">
                         <!-- Discount percantage -->
                         <div class="bg-[#DB4444] py-1 px-3 text-[12px] text-white font-Poppins font-normal leading-4 rounded-[4px] absolute top-3 left-3">
-                        -40%
+                        {{ product.discount }}
                         </div>
 
                         <!-- Add to Cart Button -->
@@ -60,6 +60,7 @@ const products = [
         originalPrice: "$820",
         rating: 5,
         reviews: 88,
+        discount:'-10%',
     },
     {
         name: "AK-900 Wired Keyboard",
@@ -68,6 +69,7 @@ const products = [
         originalPrice: "$75",
         rating: 4,
         reviews: 71,
+        discount:'-35%',
     },
     {
         name: "HAVIT HV-G92 Gamepad",
@@ -75,7 +77,8 @@ const products = [
         price: "$45",
         originalPrice: "$60",
         rating: 4,
-        reviews: 72,
+        reviews: 72, 
+        discount:'-45%',
     },
     {
         name: "MSI IPS LCD Gaming Monitor",
@@ -84,6 +87,7 @@ const products = [
         originalPrice: "$300",
         rating: 5,
         reviews: 90,
+        discount:'-20%',
     },
 ];
 </script>
