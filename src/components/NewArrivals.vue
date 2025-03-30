@@ -47,6 +47,7 @@
 </template>
 
 <script setup>
+// Importing images for the products . If this is not done, the images will not be displayed.
 import p1 from "@/assets/images/p1.png";
 import p2 from "@/assets/images/p2.png";
 import p4 from "@/assets/images/p4.png";
