@@ -1,6 +1,6 @@
 <template>
     <section class="pt-[120px]">
-        <div class="container">
+        <div class="container border-b-1 border-[rgba(0,0,0,0.3)]">
             <div class="w-full pb-7">
                 <h3 class="font-Poppins text-[36px] font-[600] leading-[48px]">New Arrivals</h3>
             </div>
@@ -8,20 +8,18 @@
                 <div class="w-1/4" v-for="(product, index) in products" :key="index">
 
                    <div class="div relative w-[250px] h-[240px] bg-[#F5F5F5] shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
-                    <div class=" group flex  py-[34px] items-center  justify-center">
-                        <!-- Product Image -->
-                        <img :src="product.image" :alt="product.name" class="w-[170px] h-auto object-contain">
-                        <!-- Discount percantage -->
-                        <div class="bg-[#DB4444] py-1 px-3 text-[12px] text-white font-Poppins font-normal leading-4 rounded-[4px] absolute top-3 left-3">
-                        {{ product.discount }}
-                        </div>
+                        <div class=" group flex  py-[34px] items-center  justify-center">
+                            <!-- Product Image -->
+                            <img :src="product.image" :alt="product.name" class="w-[170px] h-auto object-contain">
 
-                        <!-- Add to Cart Button -->
-                        <button class="absolute bottom-0 w-full bg-[rgba(0,0,0,0.8)] text-white text-sm px-4 py-[6px 
-                        ] font-Poppins text-[18px] transform translate-y-[-100%] opacity-0 transition-all 
-                        duration-500 ease-in-out group-hover:translate-y-0 group-hover:opacity-100 delay-150 mouse-pointer cursor-pointer">Add to Cart</button>
-                        
-                    </div>
+                            <!-- Discount percantage --><div class="bg-[#DB4444] py-1 px-3 text-[12px] text-white font-Poppins font-normal leading-4 rounded-[4px] absolute top-3 left-3">{{ product.discount }}</div>
+
+                            <!-- Add to Cart Button -->
+                            <button class="absolute bottom-0 w-full bg-[rgba(0,0,0,0.8)] text-white text-sm px-4 py-[6px 
+                            ] font-Poppins text-[18px] transform translate-y-[-100%] opacity-0 transition-all 
+                            duration-500 ease-in-out group-hover:translate-y-0 group-hover:opacity-100 delay-60 mouse-pointer cursor-pointer">Add to Cart</button>
+                            
+                        </div>
                    </div>
 
                     <div class="short_detail">
@@ -41,7 +39,10 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center bg-[#]"></div>
+            <!-- // The "View All Products" button -->
+            <div class=" w-full py-[118px] text-center ">
+                <a href="" class="text-center bg-[#DB4444] py-4 px-12 text-white rounded-[4px] font-Poppins text-[16px] leading-6 font-medium">View All Products</a>
+            </div>
         </div>
     </section>
 </template>
