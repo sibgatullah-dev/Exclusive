@@ -1,13 +1,17 @@
 <template>
     <section class="pt-[120px]">
         <div class="container border-b-1 border-[rgba(0,0,0,0.3)]">
+            <div class="flex items-center mr-2 mb-6" bis_skin_checked="1">
+                <div class="bg-red-500 w-4 h-8 mr-4 rounded" bis_skin_checked="1"></div>
+                <span class="text-red-500 font-semibold">Today's</span>
+            </div>
             <div class="w-full pb-7">
-                <h3 class="font-Poppins text-[36px] font-[600] leading-[48px]">New Arrivals</h3>
+                <h3 class="font-Poppins text-[36px] font-[600] leading-[48px]">Flash Sales</h3>
             </div>
             <div class="flex gap-x-[30px]">
                 <div class="w-1/4" v-for="(product, index) in products" :key="index">
 
-                   <div class="div relative w-[250px] h-[240px] bg-[#F5F5F5] shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                   <div class="div relative w-full h-[240px] bg-[#F5F5F5]  duration-300 ease-in-out">
                         <div class=" group flex  py-[34px] items-center  justify-center">
                             <!-- Product Image -->
                             <img :src="product.image" :alt="product.name" class="w-[170px] h-auto object-contain">
@@ -15,8 +19,8 @@
                             <!-- Discount percantage --><div class="bg-[#DB4444] py-1 px-3 text-[12px] text-white font-Poppins font-normal leading-4 rounded-[4px] absolute top-3 left-3">{{ product.discount }}</div>
 
                             <!-- Add to Cart Button -->
-                            <button class="absolute bottom-0 w-full bg-[rgba(0,0,0,0.8)] text-white text-sm px-4 py-[6px 
-                            ] font-Poppins text-[18px] transform translate-y-[-100%] opacity-0 transition-all 
+                            <button class="absolute bottom-0 w-full bg-[rgba(0,0,0,0.8)] text-white text-sm px-4 py-[8px 
+                            ] font-Poppins text-[16px] transform translate-y-[-100%] opacity-0 transition-all 
                             duration-500 ease-in-out group-hover:translate-y-0 group-hover:opacity-100 delay-60 mouse-pointer cursor-pointer">Add to Cart</button>
                             
                         </div>
