@@ -1,5 +1,5 @@
 <template>
-    <section class="pt-[120px]">
+ <section class="pt-[120px]">
         <div class="container ">
             <div class="flex items-center mr-2 mb-6" bis_skin_checked="1">
                 <div class="bg-red-500 w-4 h-8 mr-4 rounded" bis_skin_checked="1"></div>
@@ -45,10 +45,8 @@
             </div>
             <!-- // The "View All Products" button -->
             <div class=" w-full py-[118px] text-center ">
-                <router-link to="/shop" class="text-center bg-[#DB4444] py-4 px-12 text-white rounded-[4px] font-Poppins text-[16px] leading-6 font-medium">View All Products</router-link>
+                <a href="" class="text-center bg-[#DB4444] py-4 px-12 text-white rounded-[4px] font-Poppins text-[16px] leading-6 font-medium">View All Products</a>
             </div>
-
-            <router-view></router-view>
         </div>
     </section>
 </template>
@@ -59,9 +57,6 @@ import p1 from "@/assets/images/p1.png";
 import p2 from "@/assets/images/p2.png";
 import p4 from "@/assets/images/p4.png";
 import p5 from "@/assets/images/p5.png";
-
-import Shop from '@/pages/Shop.vue';
-import Homepage from '@/pages/Homepage.vue';
 
 const products = [
     {

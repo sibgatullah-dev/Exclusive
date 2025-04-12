@@ -26,11 +26,11 @@
                 <img :src="logo" alt=""> <!--the sign (:) binds the src with the imported logo-->
             </div>
             <div class="w-[36%] ">
-                <ul class="flex space-x-12 text-[16px] leading-[24px] font-normal Poppins">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Signup</a></li>
+                <ul class="flex space-x-12 text-[16px] leading-[24px] font-normal pointer Poppins">
+                    <li><router-link to="/">Home</router-link></li>
+                    <li><router-link to="/">Contact </router-link></li>
+                    <li><router-link to="/">About</router-link></li>
+                    <li><router-link to="/">Singin</router-link></li>
                 </ul>
             </div>
 
@@ -54,10 +54,15 @@
         </div>
     </div>
     </nav>
+    
 </template>
 
 <script setup>
 //after importing an image , the image needs to be binded with the srx class
     import logo from '@/assets/images/logo.png'
+    import Homepage from '@/pages/Homepage.vue';
+    import Shop from '@/pages/Shop.vue';
+
+    components: {Homepage,Shop}
 
 </script>
